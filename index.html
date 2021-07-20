@@ -1,10 +1,24 @@
-<iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-
-<video width="100%" height="100%" autoplay id="vid">
-  <source src="art_1.mp4" type="video/mp4">
-lul
-</video>
+<head>
 <script>
-    document.getElementById('vid').play();
+window.onload = function() {
+  var context = new AudioContext();
+}
 </script>
+</head>
 
+<div onmouseover="playVid()">
+<body>
+<!-- <iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
+
+<video height="100%" width="100%" autoplay allow="autoplay" id="vid">
+  <source src="art_1.mp4" type="video/mp4">
+</video>
+</div>
+</body>
+<script>
+   var vid_art = document.getElementById("vid");
+   function playVid()
+   {
+      vid_art.play();
+   }
+</script>
